@@ -1,0 +1,399 @@
+
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+
+}
+/* upper section */
+
+main{
+  width:  100vw;
+  min-height : -webkit-fill-available;
+  position: relative;
+}
+
+main .banner{
+  height : 25vh;
+  background: blue;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  top: 0;
+  z-index: 1;
+}
+
+.banner-text{
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  font-size: 2.3em;
+  display: flex;
+  left : 3rem;
+  top  : 3rem;
+  height: 100%;
+  width: 100%;
+}
+.banner-text button{
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  padding : 0.5em 1.5em;
+}
+
+/* middle section  */
+
+#contents{
+  min-height: -webkit-fill-available;
+  border-radius: 4rem 4rem 0 0;
+  position: absolute;
+  min-width: 100vw;
+  height: auto;
+  z-index: 2;
+  top: 19vh;
+  background: red;
+}
+
+.tutorial{
+
+  width: 100%;
+  height : 11.3vh;
+  display: flex;
+}
+.tutorial-text{
+  height: 100%;
+  flex : 5;
+  padding-top: 3em;
+  padding-inline : 2em;
+}
+.tutorial-logo{
+  flex : 2;
+  border-top-right-radius: 4rem;
+
+  border : 2px solid black;
+}
+.tutorial-title{
+  display: flex;
+  font-size: 2em;
+}
+.tutorial-text p{
+  margin-top: 0.5em;
+  font-size: 2.5em;
+}
+
+.f-box{
+  margin-top: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8em;
+  border : 1px solid black;
+  display: flex;
+  height: 3vh;
+  width: 100%;
+  padding: 1em 0;
+}
+.f-box span{
+  padding: 0 3em;
+}
+.f-logo{
+  border : 1px solid black;
+  margin-left: 2em;
+  height : 3rem;
+  width: 3rem;
+}
+
+/* middle score cards */
+
+.content-scores{
+  flex-direction: column;
+  border : 1px solid black;
+  margin-top: 2em;
+  display: flex;
+  height: 14vh;
+  width: 100%;
+  padding : 1em 0;
+  background: #f2f2f2;
+}
+
+.c-top{
+  text-align: center;
+  font-size: 2.5em;
+  flex : 0.5;
+}
+
+.c-mid{
+  font-size: 2.2em;
+  display: flex;
+  flex : 2;
+}
+
+.c-mid .team{
+  flex: 1;
+  height: 100%;
+}
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team span{
+  flex : auto;
+  display: grid;
+  place-items: center;
+}
+.team p{
+  flex : 0.5;
+  padding-bottom: 0.5em;
+}
+
+.c-mid span{
+  height : auto;
+}
+
+
+/* bottom of score card */
+
+.c-bottom{
+  border-top: 1px solid black;
+  padding-inline : 1em;
+  font-size: 2.2em;
+  display: flex;
+  flex : 0.5;
+  padding-top: 0.5em;
+}
+
+.c-bottom-in{
+  flex : 1;
+  align-items: center;
+}
+
+.c-bottom-in .in{
+  padding : 0 1em;
+}
+.c-bottom .amount{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* footer */
+
+.footer{
+  justify-content: space-between;
+  position: fixed;
+  bottom : 0;
+  height : 7.3vh;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+  /* margin-top : auto; */
+}
+.footer .f-logo-di{
+  width : -webkit-fill-available;
+  background: #FFFFFF;
+  height : 100%;
+  border : none;
+}
+.footer .f-logo-di a{
+  text-decoration: none;
+  place-items: center;
+  font-size: 5.2rem;
+  display: grid;
+  border : none;
+  padding: 0.3em 0;
+  height: auto;
+  width : auto;
+  color : #00BBF0;
+}
+.footer .f-logo-di span{
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  height: auto;
+  padding-bottom: 0.3em;
+  width: 100%;
+  bottom: 0;
+}
+
+/* window effect */
+body{
+  display: flex;
+  height : 100vh;
+  position : relative;
+}
+#window{
+  position: absolute;
+  min-height : 100vh;
+  background : wheat;
+  right: 100vw;
+  width: 100vw;
+  z-index: 3;
+
+}
+
+
+@keyframes come{
+  from{
+     right : 100vw;
+  }
+  to{
+     right : 0vw;
+  }
+}
+
+@keyframes go{
+  from{
+    right : 0vw;
+  }to{
+     right : 100vw;
+  }
+}
+
+/* window section */
+
+/* bord section */
+
+.bord-section{
+  /* border : 1px solid red; */
+  flex-direction: column;
+  display: flex;
+  padding: 3em 0;
+  height : 30vh;
+  width: 100vw;
+}
+.bord{
+  display: flex;
+}
+
+/* upper section */
+.sec-upper{
+  flex : 0.5;
+}
+.sec-upper div{
+  place-items: center;
+  font-size : 3rem;
+  text-align: center;
+  display: grid;
+}
+
+
+/* upper inner contents */
+
+.sec-middle{
+  flex : auto;
+}
+.sec-middle div{
+  width   : -webkit-fill-available;
+  /* border  : 1px solid white; */
+  place-items: center;
+  height  : 100%;
+  display: grid;
+
+}
+.bord-team-data{
+  display: grid;
+  place-items: center;
+}
+.bord-team-data span{
+  height : auto;
+  width : auto;
+}
+.bord-team-data h1{
+  height: auto;
+  padding : 0.5em 1em;
+  font-size : 2.8rem;
+}
+
+/* upper last section*/
+
+.sec-lower{
+  justify-content: center;
+  align-items: center;
+  margin : 0 auto;
+  background: #000002;
+  color :white;
+  width : 41%;
+  flex : 0.5;
+}
+.sec-lower p {
+  /* border  : 1px solid violet; */
+  font-size: 2rem;
+  /* padding : 0 2em; */
+}
+.bord-back-btn{
+  flex : 1;
+}
+.bord-text{
+  flex : 3;
+}
+.bord-how-btn{
+  flex : 1;
+}
+
+
+/* score section */
+
+.score-bord-sec{
+  min-height: calc(100vh - 30vh);
+  /* border : 1px solid red; */
+  width: 100vw;
+  background: #f6f6f6;
+}
+
+.titles{
+  height: 6vh;
+  padding : 1em 2em;
+  text-align: center;
+  font-size: 2.8rem;
+  border-top: 2px solid black;
+  border-bottom : 2px solid blue;
+}
+
+.score-bord-title , .score{
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  width : 95vw;
+}
+.score p{
+  text-align: center;
+  flex : 1;
+  font-size: 2.5rem;
+}
+.score{
+  margin-top: 2em;
+  padding : 1.5em;
+}
+
+.hey-there{
+  position: absolute;
+  place-items: center;
+  background: blue;
+  height: 100vh;
+  right : 100vw;
+  width : 100vw;
+  display: grid;
+  z-index: 5;
+}
+
+.hey-there .box{
+  height: 40vh;
+  width: 90vw;
+  border : 1px solid red;
+}
+.back-hey{
+  position: absolute;
+  border : 1px solid white;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left : 3rem;
+  display: flex;
+  width : 100vw;
+  height: 7rem;
+  top : 2em;
+}
+.back-hey span{
+  font-size: 4rem;
+}

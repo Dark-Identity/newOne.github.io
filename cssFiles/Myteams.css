@@ -1,0 +1,217 @@
+
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  width : 100%;
+  height: 100vh;
+}
+/* upper section */
+
+main{
+  /* height: ; */
+  width: 100vw;
+  min-height : -webkit-fill-available;
+  position: relative;
+}
+main .banner{
+  height : 25vh;
+  top: 0;
+  background: blue;
+  z-index: 1;
+}
+
+/* middle section  */
+
+#contents{
+
+  position: absolute;
+  min-height: calc(100vh - 18.5vh);
+  border-radius: 4rem 4rem 0 0;
+  min-width: 100vw;
+  background: red;
+  z-index: 2;
+  top: 15vh;
+
+}
+
+/* middle banner section  */
+.banner-text{
+  font-size: 2.3rem;
+  justify-content: space-between;
+  padding :  2em 1em;
+  width : 100% ;
+  height : auto;
+  display: flex;
+}
+.banner-text h1{
+  flex : 4;
+}
+.banner-text a{
+  flex : 0.5;
+  font-size: 2.5rem;
+}
+.banner-text a{
+  font-size: 2.5rem;
+  padding-top: 1.5em;
+}
+
+.card{
+  border-radius : 4em 4em 3em 3em ;
+  border : 2px solid white;
+  margin-top: 2em;
+  flex-direction: column;
+  display: flex;
+  width : 100%;
+  height : 15vh;
+}
+.card div{
+  display: flex;
+  width : 100%;
+  /* font-size: 2em; */
+
+}
+.c-name , .c-profit{
+  justify-content: center;
+  align-items: center;
+  flex : 0.5;
+  font-size: 2.4em;
+}
+.c-profit{
+  margin-bottom : 1em;
+}
+.c-name{
+  margin-top : 1em;
+  font-size: 2.5em;
+}
+.c-details{
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.3em;
+  padding : 0 2em;
+  flex : 2;
+}
+.c-details span {
+  margin-right: 2em;
+}
+
+.member-details{
+  margin-top: 2em;
+  height: -webkit-fill-available;
+  width : 100%;
+  border : 1px solid black;
+}
+.member-details h1{
+  padding: 0.5em 1em ;
+  font-size: 3rem;
+  background: #f6f6f6;
+}
+.member-card-text{
+  justify-content: space-evenly;
+  border : 2px solid black;
+  align-items: center;
+  background: #f5f5f5;
+  font-size: 2.3rem;
+  margin-top: 1em;
+  display: flex;
+  height: 7rem;
+  width: 100%;
+  box-shadow : 0 10px 10px black;
+}
+.member-card-text span{
+
+  text-align: center;
+  flex : 1;
+}
+
+/* footer */
+
+.footer{
+  justify-content: space-between;
+  position: fixed;
+  height : 7.5vh;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+  bottom: 0;
+}
+.footer .f-logo-di{
+  width : -webkit-fill-available;
+  background: #FFFFFF;
+  height : 100%;
+  border : none;
+}
+.footer .f-logo-di a{
+  text-decoration: none;
+  place-items: center;
+  font-size: 5.2rem;
+  display: grid;
+  border : none;
+  padding: 0.3em 0;
+  height: auto;
+  width : auto;
+  color : #00BBF0;
+}
+.footer .f-logo-di span{
+  padding-bottom: 0.3em;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+/* window effect */
+ body{
+  display: flex;
+}
+
+
+#window{
+  position: absolute;
+  min-height : 100vh;
+  background : wheat;
+  right: 100vw;
+  width: 100vw;
+  z-index: 4;
+
+}
+
+
+@keyframes come{
+  from{
+    right : 100vw;
+  }
+  to{
+    right : 0vw;
+  }
+}
+
+@keyframes go{
+  from{
+    right : 0vw;
+    }to{
+      right : 100vw;
+    }
+  }
+
+  /* bord upper section */
+  .bord-section{
+    position: absolute;
+    top: 0;
+    width : 100%;
+    height : 10rem;
+  }
+
+  .sec-upper{
+    justify-content: space-between;
+    font-size: 2.3em;
+    padding : 2em 1em;
+    align-items: center;
+    display: flex;
+    }
